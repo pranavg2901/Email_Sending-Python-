@@ -26,3 +26,6 @@ for each_file in os.listdir():
 with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
     smtp.login(email_id, email_pass)
     smtp.send_message(sms)
+    
+    
+# Documents will be sent only if they are available in similar folder otherwise documents like img, pdf, etc will not be send with mail.
